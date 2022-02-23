@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background: #1d1d1d;
+  overflow: hidden;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.lyr{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: -50%;
+  box-shadow: 10px 0 10px rgba(0,0,0,.27)
+}
+.lyr.ly1{
+  transform: skewX(-45deg) translateX(0);
+  background: #03a9f4;
+  z-index: 1;
+}
+.lyr.ly2{
+  transform: skewX(-45deg) translateX(-100px);
+  background: #fbfbfb;
+  z-index: 3;
+}
+.lyr.ly3{
+  transform: skewX(-45deg) translateX(-200px);
+  background: #ff3161;
+  z-index: 5;
+}
+.lyr.ly4{
+  transform: skewX(-45deg) translateX(-300px);
+  background: #1d1d1d;
+  z-index: 10;
+}
+.lyr.ly5{
+  transform: skewX(45deg) translateX(0);
+  background: #ff3161;
+  z-index: 2;
+}
+.lyr.ly6{
+  transform: skewX(45deg) translateX(-100px);
+  background: #03a9f4;
+  z-index: 4;
+}
+.lyr.ly7{
+  transform: skewX(45deg) translateX(-200px);
+  background: #fbfbfb;
+  z-index: 6;
+}
+.lyr.ly8{
+  transform: skewX(45deg) translateX(-300px);
+  background: #1d1d1d;
+  z-index: 8;
+}
+.lyr.ly9{
+  transform: skewX(45deg) translateX(-300px);
+  background: transparent;
+  z-index: 10;
+}
